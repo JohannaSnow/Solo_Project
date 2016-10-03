@@ -1,0 +1,25 @@
+{
+  "name": "gfar",
+  "version": "1.0.0",
+  "description": "solo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohannaSnow/Solo_Project.git"
+  },
+  "author": "jo snow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohannaSnow/Solo_Project/issues"
+  },
+  "homepage": "https://github.com/JohannaSnow/Solo_Project#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
