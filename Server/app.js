@@ -17,9 +17,10 @@ app.listen(portDecision, function(){
 
 // // app.get --  serves the index -- get params
 app.get( '/', function( req, res ){
-//res.sendFile( path.resolve( 'public/index.html' ) );
+  console.log ('base url hit'));
+res.sendFile( path.resolve( 'public/index.html' ) );
 });
-console.log ('base url hit)');
+
 
 
 app.use( express.static( 'public' ) );
