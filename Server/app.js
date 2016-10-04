@@ -17,7 +17,7 @@ app.listen(portDecision, function(){
 
 // // app.get --  serves the index -- get params
 app.get( '/', function( req, res ){
-  console.log ('base url hit'));
+  console.log ('base url hit');
 res.sendFile( path.resolve( 'public/index.html' ) );
 });
 
