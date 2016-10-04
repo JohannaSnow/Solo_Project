@@ -3,12 +3,17 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded( { extended: true } );
 var path = require('path');
 var app = express();
-//var mongoose = require('mongoose');
+var mongoose = require('mongoose');
 //var PetModel = require('../models.PetModel'); //not necessary to have this here, need it in routers though!
 var portDecision = process.env.PORT || 8000;
 
 //json body parser
 app.use(bodyParser.json());
+
+
+//connect to database
+var connection = require('../modules/connection');
+mongoose.connect(connection);
 
 //listen and port decision
 app.listen(portDecision, function(){
