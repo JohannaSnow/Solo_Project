@@ -26,6 +26,10 @@ app.get( '/', function( req, res ){
 res.sendFile( path.resolve( 'public/index.html' ) );
 });
 
+app.get('/vodka', function( req, res ){
+  console.log ('vodka is hit');
+  res.sendFile ( path.resolve( ' public/partials/vodka.html' ) );
+});
 
 
 app.use( express.static( 'public' ) );

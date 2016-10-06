@@ -1,4 +1,4 @@
-ul {
+/*ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,4 +7,84 @@ ul {
 
 li a {
     display: block;
+}*/
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  color: #00202a;
+  background-color: #29aa9a;
+}
+.login {
+float: right;
+}
+h2 {
+  text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    width: 60px;
+}
+
+li a {
+  text-decoration: none;
+  color: #00202a;
+}
+
+a:hover {
+    background-color: LightBlue;
+}
+
+.petDiv {
+  background-color: LightBlue;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  width: 30%;
+}
+.imageDiv {
+  margin: 5px;
+  height: 300px;
+}
+.petImage {
+  width: 80%;
+  height: 80%;
+}
+
+.myform {
+  margin:0 auto;
+  padding:14px;
+}
+
+#stylized {
+  background: LightBlue;
+  border-radius: 10px;
+}
+
+#stylized label {
+  display:block;
+  font-weight:bold;
+  text-align:left;
+}
+#stylized input {
+  padding:4px 2px;
+  border:solid 1px LightBlue;
+  margin:2px 0 20px 10px;
+}
+
+#stylized #addnew {
+  font-size: 24px;
+  border-radius: 10px;
+  padding:10px;
+  margin:  5px;
 }

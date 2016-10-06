@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>GFAR-Home</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+   <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="../scripts/clientscript.js"></script>
+    <script src="../scripts/controllers/Controller.js"></script>
+   <script src="../scripts/controllers/aboutUsController.js"></script>
+   <script src="../scripts/controllers/beerController.js"></script>
+   <script src="../scripts/controllers/bourbonController.js"></script>
+   <script src="../scripts/controllers/contactUsController.js"></script>
+   <script src="../scripts/controllers/ginController.js"></script>
+   <script src="../scripts/controllers/liqueursController.js"></script>
+   <script src="../scripts/controllers/loginController.js"></script>
+   <script src="../scripts/controllers/rumController.js"></script>
+   <script src="../scripts/controllers/scotchController.js"></script>
+   <script src="../scripts/controllers/tequilaController.js"></script>
+   <script src="../scripts/controllers/vodkaController.js"></script>
+   <script src="../scripts/controllers/whiskeyController.js"></script>
+   <link href="../styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+<h1>Welcome!</h1>
+<h5>This is a gluten free alcohol reference page.</h5>
+
+<!--
+<div ng-init="getVodka()" ng-controller="viewVodkaController">
+      <div id="vodkaDiv" ng-repeat="booze in booze"> -->
+        <!-- <span ng-show="vodka">	<button type="button" ng-click="vodka(item._id)" name="button"> Vodka </button></span><br>
+        <!-- <div> -->
+          <!-- {{booze.name}}
+        </div>
+        <div>
+          {{booze.description}}
+        </div>
+        <div>
+          {{booze.origin}}
+        </div>
+        <div>
+          {{booze.ingredients}}
+        </div>
+        <div>
+          {{booze.abv}}
+        </div>
+        <div>
+          {{booze.safe}}
+        </div> -->
+        <!-- <div>
+          <img ng-src={{booze.image}} alt="booze image" />
+          </div> -->
+      <!-- </div>
+    </div> -->
+<!-- //<h2>Spectacular Mountain</h2>
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;"> -->
+<nav>
+  <ul>
+    <li><strong>Home</strong></li>
+    <li><a href="#aboutus.html">About Us</a></li>
+    <li><a href="#vodka.html">Vodka</a>
+    <li><a href="#gin.html">Gin</a></li>
+    <li><a href="#tequila.html">Tequila</a></li>
+    <li><a href="#rum.html">Rum</a></li>
+    <li><a href="#liqueurs.html">Liqueurs</a></li>
+    <li><a href="#beer.html">Beer</a></li>
+    <li><a href="#whiskey.html">Whiskey</a></li>
+    <li><a href="#bourbon.html">Bourbon</a></li>
+    <li><a href="#scotch.html">Scotch</a></li>
+    <li><a href="#contactus.html">Contact Us</a></li>
+  </ul>
+   <main ng-view></main>
+</nav>
+
+<!-- <img src="vodka.jpg" alt="Vodka" style="width:128px;height:128px;"> -->
+<div class="login" ng-hide="userIsLoggedIn"><button ng-click="login()">Log In</button></div>
+
+
+
+<!-- <button type="button">Log In!</button> -->
+<button type="button">Sign Up!</button>
+  </body>
+</html>
