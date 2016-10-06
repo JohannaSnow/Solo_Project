@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>GFAR-Home</title>
+    <script src="../vendors/angular.min.js" charset="utf-8"></script>
+    <script src="../vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="../scripts/clientscript.js"></script>
+    <script src="../scripts/controllers/aboutUsController.js"></script>
+    <script src="../scripts/controllers/beerController.js"></script>
+    <script src="../scripts/controllers/bourbonController.js"></script>
+    <script src="../scripts/controllers/contactUsController.js"></script>
+    <script src="../scripts/controllers/ginController.js"></script>
+    <script src="../scripts/controllers/liqueursController.js"></script>
+    <script src="../scripts/controllers/loginController.js"></script>
+    <script src="../scripts/controllers/rumController.js"></script>
+    <script src="../scripts/controllers/scotchController.js"></script>
+    <script src="../scripts/controllers/tequilaController.js"></script>
+    <script src="../scripts/controllers/vodkaController.js"></script>
+    <script src="../scripts/controllers/whiskeyController.js"></script>
+    <link href="../styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+<h1>Welcome!</h1>
+<h5>This is a gluten free alcohol reference page.</h5>
+
+<nav>
+  <ul>
+    <li><strong><a href="#home.html">Home</a></strong></li>
+    <li><strong><a href="#aboutUs.html">About Us</a></strong></li>
+    <li><strong><a href="#vodka.html">Vodka</a></strong></li>
+    <li><strong><a href="#gin.html">Gin</a></strong></li>
+    <li><strong><a href="#tequila.html">Tequila</a></strong></li>
+    <li><strong><a href="#rum.html">Rum</a></strong></li>
+    <li><strong><a href="#liqueurs.html">Liqueurs</a></strong></li>
+    <li><strong><a href="#beer.html">Beer</a></strong></li>
+    <li><strong><a href="#whiskey.html">Whiskey</a></strong></li>
+    <li><strong><a href="#bourbon.html">Bourbon</a></strong></li>
+    <li><strong><a href="#scotch.html">Scotch</a></strong></li>
+    <li><strong><a href="#contactUs.html">Contact Us</a></strong></li>
+  </ul>
+    <main ng-view></main>
+  </nav>
+
+</body>
+</html>
