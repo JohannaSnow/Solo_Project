@@ -4,19 +4,18 @@ var urlencodedParser = bodyParser.urlencoded( { extended: true } );
 var path = require('path');
 var app = express();
 var mongoose = require('mongoose');
-//var PetModel = require('../models.PetModel'); //not necessary to have this here, need it in routers though!
 var portDecision = process.env.PORT || 8000;
 
 //json body parser and urlencodedparser
 app.use(bodyParser.json());
-app.use(urlencodedparser);
+// app.use(urlencodedparser);
 
 //use router
 var boozeRouter = require('./routers/boozeRouter');
 app.use('/booze', boozeRouter);
 
 //set up Mongodb
-var mongoURI = 'mongodb://localhost:27017/GFARdb';         //////*******DOUBLE CHECK THIS/ DO YOU WaNT TO CHANGE IT TO A BOOZE DB INSTEAD???///////****
+var mongoURI = 'mongodb://localhost:27017/GFAR';         //////*******DOUBLE CHECK THIS/ DO YOU WaNT TO CHANGE IT TO A BOOZE DB INSTEAD???///////****
 var mongoDB = mongoose.connect(mongoURI).connection;
 
 //connect to database
