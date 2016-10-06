@@ -8,7 +8,7 @@ myApp.controller('beerController', ['$scope', '$http', function($scope, $http){
 
     $http({
       method: 'GET',
-      url: /beer,
+      url: '/beer',
     }).then(function(response){
       console.log(response);
       // $scope. = response.data.contents.qimage.download_uri;

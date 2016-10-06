@@ -19,8 +19,8 @@ var mongoURI = 'mongodb://localhost:27017/GFAR';         //////*******DOUBLE CHE
 var mongoDB = mongoose.connect(mongoURI).connection;
 
 //connect to database
-var connection = require('../modules/connection');
-mongoose.connect(connection);
+// var connection = require('./modules/connection');
+// mongoose.connect(connection);
 
 // db error handling
 mongoDB.on('error', function(err){
@@ -38,13 +38,13 @@ app.listen(portDecision, function(){
 // // app.get --  serves the index -- get params
 app.get( '/', function( req, res ){
   console.log ('base url hit');
-res.sendFile( path.resolve( 'public/index.html' ) );
+// res.sendFile( path.resolve( 'public/index.html' ) );
 });
 
-// app.get('/vodka', function( req, res ){
-//   console.log ('vodka is hit');
-//   res.sendFile ( path.resolve( ' public/partials/vodka.html' ) );
-// });
+app.get('/test', function( req, res ){
+  console.log ('test is hit');
+  // res.sendFile ( path.resolve( ' public/partials/vodka.html' ) );
+});
 
 
 app.use( express.static( 'public' ) );
