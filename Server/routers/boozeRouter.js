@@ -29,16 +29,7 @@ router.get('/:id', function(req, res){
     }
   });
   });
-// router.get('/home.html', function(req, res) {
-// console.log('home');
-// });
-//
-// router.get('/aboutUs.html', function(req, res) {
-// console.log('aboutUs');
-// });
-// router.get('/vodka.html', function(req, res) {
-//   console.log('vodka');
-// });
+
 
 
 module.exports = router;

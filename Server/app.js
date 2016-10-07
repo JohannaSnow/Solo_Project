@@ -42,19 +42,4 @@ res.sendFile( path.resolve( 'public/index.html' ) );
 // res.sendFile( path.resolve( 'public/views/partials/index.html' ) );
 // });
 
-
-
-// app.get('/home.html', function( req, res ){
-//   console.log ('home is hit');
-//   res.sendFile ( path.resolve( 'public/views/partials/home.html' ) );
-// });
-//
-// app.get('/aboutUs.html', function( req, res ){
-//   console.log ('about us is hit');
-//   res.sendFile ( path.resolve( 'public/views/partials/aboutUs.html' ) );
-// });
-
-
-
-
 app.use( express.static( 'public' ) );
