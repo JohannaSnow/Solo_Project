@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 
 var boozeSchema = new Schema({
   name: {type:String, required: true},
+  type: {type:String, required: true},
   description: {type: String},
   origin: {type:String, required: true},
   ingredients: {type:String, required: true},

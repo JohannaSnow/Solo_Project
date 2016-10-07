@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded( { extended: true } );
+var urlencodedparser = bodyParser.urlencoded( { extended: true } );
 var path = require('path');
 var app = express();
 var mongoose = require('mongoose');
@@ -8,19 +8,15 @@ var portDecision = process.env.PORT || 8000;
 
 //json body parser and urlencodedparser
 app.use(bodyParser.json());
-// app.use(urlencodedparser);
+app.use(urlencodedparser);
 
 //use router
 var boozeRouter = require('./routers/boozeRouter');
 app.use('/booze', boozeRouter);
 
 //set up Mongodb
-var mongoURI = 'mongodb://localhost:27017/GFAR';         //////*******DOUBLE CHECK THIS/ DO YOU WaNT TO CHANGE IT TO A BOOZE DB INSTEAD???///////****
+var mongoURI = 'mongodb://localhost:27017/GFAR';
 var mongoDB = mongoose.connect(mongoURI).connection;
-
-//connect to database
-// var connection = require('./modules/connection');
-// mongoose.connect(connection);
 
 // db error handling
 mongoDB.on('error', function(err){
@@ -38,12 +34,12 @@ app.listen(portDecision, function(){
 // // app.get --  serves the index -- get params
 app.get( '/', function( req, res ){
   console.log ('base url hit');
-// res.sendFile( path.resolve( 'public/index.html' ) );
+res.sendFile( path.resolve( 'public/index.html' ) );
 });
 
-app.get('/test', function( req, res ){
-  console.log ('test is hit');
-  // res.sendFile ( path.resolve( ' public/partials/vodka.html' ) );
+app.get('/vodka', function( req, res ){
+  console.log ('vodka is hit');
+  res.sendFile ( path.resolve( 'public/views/partials/vodka.html' ) );
 });
 
 
