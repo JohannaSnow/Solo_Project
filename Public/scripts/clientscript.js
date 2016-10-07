@@ -3,9 +3,12 @@ var myApp = angular.module('myApp', ['ngRoute']);
 // angular routing
 myApp.config(['$routeProvider', function($routeProvider){
   $routeProvider.
-    when('/aboutUs', {
-      templateUrl: '../views/partials/aboutUs.html',
-      controller: 'aboutUsController'
+    when('/home', {
+      templateUrl: '../views/partials/home.html'
+    }).
+    when('/about', {
+      templateUrl: '../views/partials/about.html',
+      controller: 'aboutController'
     }).
     when('/beer', {
       templateUrl: '../views/partials/beer.html',

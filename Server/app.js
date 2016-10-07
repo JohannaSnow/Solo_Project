@@ -37,10 +37,24 @@ app.get( '/', function( req, res ){
 res.sendFile( path.resolve( 'public/index.html' ) );
 });
 
-app.get('/vodka', function( req, res ){
-  console.log ('vodka is hit');
-  res.sendFile ( path.resolve( 'public/views/partials/vodka.html' ) );
-});
+// app.get( '/:id', function( req, res ){
+//   console.log ('id hit');
+// res.sendFile( path.resolve( 'public/views/partials/index.html' ) );
+// });
+
+
+
+// app.get('/home.html', function( req, res ){
+//   console.log ('home is hit');
+//   res.sendFile ( path.resolve( 'public/views/partials/home.html' ) );
+// });
+//
+// app.get('/aboutUs.html', function( req, res ){
+//   console.log ('about us is hit');
+//   res.sendFile ( path.resolve( 'public/views/partials/aboutUs.html' ) );
+// });
+
+
 
 
 app.use( express.static( 'public' ) );
