@@ -1,3 +1,5 @@
+//controller that controls "about page"
+
 myApp.controller('aboutController', ['$scope', '$http', function($scope, $http){
   console.log('show me about');
 

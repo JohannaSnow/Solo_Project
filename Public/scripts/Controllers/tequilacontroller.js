@@ -1,3 +1,5 @@
+//controller that controls "tequila page"
+
 myApp.controller('tequilaController', ['$scope', '$http', function($scope, $http){
   console.log('mas tequila');
 

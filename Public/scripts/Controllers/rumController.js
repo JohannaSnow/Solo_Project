@@ -1,3 +1,5 @@
+//controller that controls "rum page"
+
 myApp.controller('rumController', ['$scope', '$http', function($scope, $http){
   console.log('show me rum');
 

@@ -1,3 +1,5 @@
+//controller that controls "vodka page"
+
 myApp.controller('vodkaController', ['$scope', '$http', function($scope, $http){
   console.log('show me vodka');
 

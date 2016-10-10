@@ -1,3 +1,5 @@
+//controller that controls "beer page"
+
 myApp.controller('beerController', ['$scope', '$http', function($scope, $http){
   console.log('show me beers');
 

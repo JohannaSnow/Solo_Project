@@ -1,3 +1,5 @@
+//controller that will control login page once it's up and running
+
 myApp.controller('loginController', ['$scope', '$http', function($scope, $http){
   console.log('log me in scotty!');
 

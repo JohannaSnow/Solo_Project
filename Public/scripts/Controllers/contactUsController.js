@@ -1,3 +1,5 @@
+//controller that controls "contact us page"
+
 myApp.controller('contactUsController', ['$scope', '$http', function($scope, $http){
   console.log('contact us hit');
 

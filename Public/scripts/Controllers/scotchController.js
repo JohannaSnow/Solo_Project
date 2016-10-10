@@ -1,3 +1,5 @@
+//controller that controls "scotch page"
+
 myApp.controller('scotchController', ['$scope', '$http', function($scope, $http){
   console.log('show me scotch');
 

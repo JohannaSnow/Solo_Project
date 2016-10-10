@@ -1,3 +1,5 @@
+//controller that controls "liqueur page"
+
 myApp.controller('liqueursController', ['$scope', '$http', function($scope, $http){
   console.log('get liqueurs');
 

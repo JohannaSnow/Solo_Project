@@ -1,3 +1,5 @@
+//controller that controls "gin page"
+
 myApp.controller('ginController', ['$scope', '$http', function($scope, $http){
   console.log('show me gin N juice');
 
