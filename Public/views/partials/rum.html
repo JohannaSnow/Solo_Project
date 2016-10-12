@@ -8,8 +8,17 @@ Argh, Rum!
 </p>
 <h4> Is Rum safe for Celiacs?</h4>
 <p>
-  Yes! Most rums are safe for celiacs. Just be sure to watch out for rums that have been aged in barrels that used to age bourbon/scotch/ or whiskey! 
+  Yes! Most rums are safe for celiacs. Just be sure to watch out for rums that have been aged in barrels that used to age bourbon/scotch/ or whiskey!
 </p>
-<p>
-  {{alltherum}}
+<div>
+<p ng-repeat="booze in alltherum">
+  {{booze.name}}
+  {{booze.type}}
+  {{booze.description}}
+  {{booze.origin}}
+  {{booze.ingredients}}
+  {{booze.abv}}
+  {{booze.safe}}
+  <img src="{{booze.image}}" />
 </p>
+  </div>

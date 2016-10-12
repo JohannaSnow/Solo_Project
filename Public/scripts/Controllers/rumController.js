@@ -8,10 +8,10 @@ myApp.controller('rumController', ['$scope', '$http', function($scope, $http){
 
     $http({
       method: 'GET',
-      url: '/booze/rum',
+      url: '/booze/Rum',
     }).then(function(response){
       console.log(response);
-      $scope.alltherum = response;
+      $scope.alltherum = response.data;
     });
   };
 
