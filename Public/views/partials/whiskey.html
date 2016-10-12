@@ -17,5 +17,15 @@ Canadian Whisky is a broad category of whiskies that are fermented, distilled, a
 <p>
   Regular whiskey, no, not at all. But, there is hope! Some distilleries have started to make whiskey out of 100% sorghum.
 </p>
-<p>
-  {{allthewhiskey}}
+<div>
+<p ng-repeat="booze in allthewhiskey">
+  {{booze.name}}
+  {{booze.type}}
+  {{booze.description}}
+  {{booze.origin}}
+  {{booze.ingredients}}
+  {{booze.abv}}
+  {{booze.safe}}
+  <img src="{{booze.image}}" />
+</p>
+  </div>
