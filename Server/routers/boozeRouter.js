@@ -64,6 +64,26 @@ router.get('/:id', function(req, res){
     }); // end save newBooze
   }); // end post route
 
+  // put route
+router.put('/', function(req, res){
+  console.log('in put router');
+
+  var condition = {_id: req.body._id};
+  var update = {name: req.body.name, type: req.body.type, description: req.body.description,
+  origin: req.body.origin, ingredients: req.body.ingredients, abv: req.body.abv, safe: req.body.safe,
+  image: req.body.image};
+
+  // update selected booze
+  Booze.update(condition, update, function(err){
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    } else {
+      console.log('booze updated');
+      res.sendStatus(201);
+    }
+  }); // end update selected booze
+}); // end put route
 
 
 // delete route
@@ -76,10 +96,10 @@ router.delete('/', function(req, res){
   Booze.remove({_id: req.body._id}, function(err){
     if(err){
       console.log(err);
-      res.sendStatus(500);
+      res.sendStatus(200);
     } else {
       console.log('Booze deleted');
-      res.sendStatus(201);
+      res.sendStatus(204);
     }//end else
   }); // end remove selected booze
 }); // end delete route
