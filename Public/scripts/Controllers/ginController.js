@@ -8,10 +8,10 @@ myApp.controller('ginController', ['$scope', '$http', function($scope, $http){
 
     $http({
       method: 'GET',
-      url: '/booze/gin',
+      url: '/booze/Gin',
     }).then(function(response){
       console.log(response);
-      $scope.allthegin = response;
+      $scope.allthegin = response.data;
     });
   };
 

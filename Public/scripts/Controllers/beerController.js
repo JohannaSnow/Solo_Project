@@ -8,7 +8,7 @@ myApp.controller('beerController', ['$scope', '$http', function($scope, $http){
 
     $http({
       method: 'GET',
-      url: '/booze/beer',
+      url: '/booze/Beer',
     }).then(function(response){
       console.log(response);
       $scope.allthebeer = response.data;

@@ -11,9 +11,22 @@ While the origins of the clear liquor are somewhat debatable, several hundred ye
 
 <h4>Safe for celiacs?</h4>
 <p>
-   Same as with vodka, look for gin's whose base spirit is made from non-gluten grains. 
+   Same as with vodka, look for gin's whose base spirit is made from non-gluten grains.
 </p>
 
-<p>
-  {{allthegin}}
+<div>
+<p ng-repeat="booze in allthegin">
+  {{booze.name}}
+  {{booze.type}}
+  {{booze.description}}
+  {{booze.origin}}
+  {{booze.ingredients}}
+  {{booze.abv}}
+  {{booze.safe}}
+  <img src="{{booze.image}}" />
 </p>
+  </div>
+
+<!-- <p>
+  {{allthegin}}
+</p> -->
