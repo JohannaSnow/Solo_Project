@@ -3,8 +3,6 @@
 myApp.controller('beerController', ['$scope', '$http', function($scope, $http){
   console.log('show me beers');
 
-  // $scope.sourcedImage = "";
-
   $scope.getBeer = function(){
     console.log('in get Beer');
 
@@ -13,7 +11,7 @@ myApp.controller('beerController', ['$scope', '$http', function($scope, $http){
       url: '/booze/beer',
     }).then(function(response){
       console.log(response);
-      $scope.allthebeer = response;
+      $scope.allthebeer = response.data;
     });
   };
 
