@@ -9,6 +9,18 @@ Vodka is a chameleon and blends seamlessly with just about anything. This is no 
 <p>
   Be sure to look for vodka's that are made from non-gluten grains.
 </p>
-<p>
-  {{allthevodka}}
-</p>
+  <div>
+  <p ng-repeat="booze in allthevodka">
+    {{booze.name}}
+    {{booze.type}}
+    {{booze.description}}
+    {{booze.origin}}
+    {{booze.ingredients}}
+    {{booze.abv}}
+    {{booze.safe}}
+    <img src="{{booze.image}}" />
+  </p>
+    </div>
+
+  <!-- {{allthevodka}} -->
+<!-- </p> -->

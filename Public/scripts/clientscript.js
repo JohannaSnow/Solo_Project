@@ -14,6 +14,10 @@ myApp.config(['$routeProvider', function($routeProvider){
       templateUrl: '../views/partials/beer.html',
       controller: 'beerController'
     }).
+    when('/boozeCollection', {
+      templateUrl: '../views/partials/boozeCollection.html',
+      controller: 'boozeCollectionController'
+    }).
     when('/bourbon', {
       templateUrl: '../views/partials/bourbon.html',
       controller: 'bourbonController'

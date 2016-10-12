@@ -10,10 +10,10 @@ myApp.controller('vodkaController', ['$scope', '$http', function($scope, $http){
 
     $http({
       method: 'GET',
-      url: '/booze/vodka',
+      url: '/booze/Vodka',
     }).then(function(response){
       console.log(response);
-      $scope.allthevodka = response;
+      $scope.allthevodka = response.data;
     });
   };
 
