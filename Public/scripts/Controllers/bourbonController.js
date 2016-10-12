@@ -8,10 +8,10 @@ myApp.controller('bourbonController', ['$scope', '$http', function($scope, $http
 
     $http({
       method: 'GET',
-      url: '/booze/bourbon',
+      url: '/booze/Bourbon',
     }).then(function(response){
       console.log(response);
-      $scope.allthebourbon = response;
+      $scope.allthebourbon = response.data;
     });
   };
 

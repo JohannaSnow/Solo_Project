@@ -10,6 +10,15 @@ This is a bourbon page, all the bourbon goes here.
 <p>
   Unfortunately no, while it is true that bourbon must be made from a  mash that is at least 51% corn to be classified as a bourbon and while that's gluten free, the other 49% of that mash is made of gluten ingriedients. Missing a bourbon Manhattan or Old Fashioned? Look into aged rum. They taste similar to a nice aged bourbon.
 </p>
-<p>
-  {{allthebourbon}}
+<div>
+<p ng-repeat="booze in allthebourbon">
+  {{booze.name}}
+  {{booze.type}}
+  {{booze.description}}
+  {{booze.origin}}
+  {{booze.ingredients}}
+  {{booze.abv}}
+  {{booze.safe}}
+  <img src="{{booze.image}}" />
 </p>
+  </div>
