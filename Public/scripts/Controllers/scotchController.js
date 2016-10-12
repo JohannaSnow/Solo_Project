@@ -8,10 +8,10 @@ myApp.controller('scotchController', ['$scope', '$http', function($scope, $http)
 
     $http({
       method: 'GET',
-      url: '/booze/scotch',
+      url: '/booze/Scotch',
     }).then(function(response){
       console.log(response);
-      $scope.allthescotch = response;
+      $scope.allthescotch = response.data;
     });
   };
 

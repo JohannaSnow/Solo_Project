@@ -9,6 +9,16 @@ Sorry, Sean Connery: scotch whisky will always be Scotland’s greatest export. 
 <p>
   Unfortunately, no. Since Scotch is made from 100% malted Barley, there's no way to make it Gluten Free.
 </p>
-<p>
-  {{allthescotch}}
+
+<div>
+<p ng-repeat="booze in allthescotch">
+  {{booze.name}}
+  {{booze.type}}
+  {{booze.description}}
+  {{booze.origin}}
+  {{booze.ingredients}}
+  {{booze.abv}}
+  {{booze.safe}}
+  <img src="{{booze.image}}" />
 </p>
+  </div>
