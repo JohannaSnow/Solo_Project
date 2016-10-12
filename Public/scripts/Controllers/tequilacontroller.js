@@ -8,10 +8,10 @@ myApp.controller('tequilaController', ['$scope', '$http', function($scope, $http
 
     $http({
       method: 'GET',
-      url: '/booze/tequila',
+      url: '/booze/Tequila',
     }).then(function(response){
       console.log(response);
-      $scope.allthetequila = response;
+      $scope.allthetequila = response.data;
     });
   };
 
