@@ -8,10 +8,10 @@ myApp.controller('loginController', ['$scope', '$http', function($scope, $http){
 
     $http({
       method: 'GET',
-      url: '/booze/login',
+      url: '/booze/Login',
     }).then(function(response){
       console.log(response);
-      $scope.allthelogin = response;
+      $scope.allthelogin = response.data;
     });
   };
 
