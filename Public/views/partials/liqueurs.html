@@ -9,7 +9,15 @@
 <p>
   Depends on what the base of the liqueurs is made from. Be wary of them, until you can decipher what the base is made with.
 </p>
-
-<p>
-  {{alltheliqueurs}}
+<div>
+<p ng-repeat="booze in alltheliqueurs">
+  {{booze.name}}
+  {{booze.type}}
+  {{booze.description}}
+  {{booze.origin}}
+  {{booze.ingredients}}
+  {{booze.abv}}
+  {{booze.safe}}
+  <img src="{{booze.image}}" />
 </p>
+  </div>
