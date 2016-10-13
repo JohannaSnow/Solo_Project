@@ -9,7 +9,7 @@ var boozeSchema = new Schema({
   origin: {type:String, required: true},
   ingredients: {type:String, required: true},
   abv: Number,
-  safe: Boolean,
+  safe: {type:String, require: true},
   image: {type: String, default: "http://winegifted.com/wp-content/uploads/2015/10/tequila-cat.jpeg"}
 });
 
