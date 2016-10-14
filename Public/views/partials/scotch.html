@@ -11,14 +11,14 @@ Sorry, Sean Connery: scotch whisky will always be Scotland’s greatest export. 
 </p>
 
 <div>
-<p ng-repeat="booze in allthescotch">
-  {{booze.name}}
-  {{booze.type}}
-  {{booze.description}}
-  {{booze.origin}}
-  {{booze.ingredients}}
-  {{booze.abv}}
-  {{booze.safe}}
-  <img src="{{booze.image}}" />
-</p>
-  </div>
+<div ng-repeat="booze in allthescotch">
+  <img src= "{{booze.image}}"/>
+  <p>Name: {{booze.name}}</p>
+  <p>Type: {{booze.type}}</p>
+  <p>Description: {{booze.description}}</p>
+  <p>Origin:{{booze.origin}}</p>
+  <p>Ingredients:{{booze.ingredients}}</p>
+  <p>ABV: {{booze.abv}}</p>
+  <p>Safe: {{booze.safe}}</p>
+
+</div>

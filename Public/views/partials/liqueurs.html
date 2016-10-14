@@ -10,14 +10,14 @@
   Depends on what the base of the liqueurs is made from. Be wary of them, until you can decipher what the base is made with.
 </p>
 <div>
-<p ng-repeat="booze in alltheliqueurs">
-  {{booze.name}}
-  {{booze.type}}
-  {{booze.description}}
-  {{booze.origin}}
-  {{booze.ingredients}}
-  {{booze.abv}}
-  {{booze.safe}}
-  <img src="{{booze.image}}" />
-</p>
-  </div>
+<div ng-repeat="booze in alltheliqueurs">
+  <img src= "{{booze.image}}"/>
+  <p>Name: {{booze.name}}</p>
+  <p>Type: {{booze.type}}</p>
+  <p>Description: {{booze.description}}</p>
+  <p>Origin:{{booze.origin}}</p>
+  <p>Ingredients:{{booze.ingredients}}</p>
+  <p>ABV: {{booze.abv}}</p>
+  <p>Safe: {{booze.safe}}</p>
+
+</div>

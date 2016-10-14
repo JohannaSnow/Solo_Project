@@ -11,14 +11,14 @@
 Regular beer, no! But there are lots of varieties of gluten free beer that are now more widely available! Be wary of Gluten Removed Beer as they will probably make you sick!
 </p>
 <div>
-<p ng-repeat="booze in allthebeer">
-  {{booze.name}}
-  {{booze.type}}
-  {{booze.description}}
-  {{booze.origin}}
-  {{booze.ingredients}}
-  {{booze.abv}}
-  {{booze.safe}}
-  <img src="{{booze.image}}" />
-</p>
-  </div>
+<div ng-repeat="booze in allthebeer">
+  <img src= "{{booze.image}}"/>
+  <p>Name: {{booze.name}}</p>
+  <p>Type: {{booze.type}}</p>
+  <p>Description: {{booze.description}}</p>
+  <p>Origin:{{booze.origin}}</p>
+  <p>Ingredients:{{booze.ingredients}}</p>
+  <p>ABV: {{booze.abv}}</p>
+  <p>Safe: {{booze.safe}}</p>
+
+</div>
