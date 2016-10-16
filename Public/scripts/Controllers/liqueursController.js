@@ -8,11 +8,14 @@ myApp.controller('liqueursController', ['$scope', '$http', function($scope, $htt
 
     $http({
       method: 'GET',
-      url: '/booze/Liqueurs',
+      url: '/booze/Liqueur',
     }).then(function(response){
       console.log(response);
       $scope.alltheliqueurs = response.data;
     });
   };
 
+
   $scope.getLiqueurs();
+
+}]);
