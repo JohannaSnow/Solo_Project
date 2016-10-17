@@ -1,4 +1,4 @@
-Gluten Free Alcohol Reference(GFAR)
+Gluten Free Alcohol Resource(GFAR)
 ---------------------------------------------
 Johanna Snow
 10/01/16 | Version 1
@@ -88,16 +88,15 @@ GFAR requires the user have an account to leave comments/ have favorites
 
 Technologies:
 Angular
-Auth0
-BootStrap
+Auth0(eventually)
 Express
-MongoDB ( Might switch to SQL but want to try Mongo first).
+MongoDB
 Node
-Heroku
+Heroku (eventually)
 
 Stretch Goals:
 Make viewable on mobile device
 Add locations on where to buy certain alcohol (restaurants, liquor stores)
 When alcohol is clicked, vodka for example, organize results with GF on left and non-GF on right.
 Possibly add taste descriptions to the liquor in the DB
-Add a rating system for users
+Add a rating system for users/comments
