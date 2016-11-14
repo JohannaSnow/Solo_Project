@@ -2,6 +2,15 @@ Gluten Free Alcohol Resource(GFAR)
 ---------------------------------------------
 Johanna Snow
 10/01/16 | Version 1
+
+
+Technologies:
+Angular
+Auth0(eventually)
+Express
+MongoDB
+Node
+Heroku (eventually)
 -------------------------------------------
 Document Objectives:
 To compile a comprehensive list of GF alcoholic beverage options.
