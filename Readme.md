@@ -4,13 +4,16 @@ Johanna Snow
 10/01/16 | Version 1
 
 
-Technologies:
-Angular
-Auth0(eventually)
-Express
-MongoDB
-Node
-Heroku (eventually)
+Technologies: Angular, Express, MongoDB, Node
+
+Soon to come:
+Authorization: Auth0 or Passport
+-Rating system
+-New Layout
+-Mobile friendly
+-Goal to release to App store
+- Create an API for other people to use
+
 -------------------------------------------
 Document Objectives:
 To compile a comprehensive list of GF alcoholic beverage options.
